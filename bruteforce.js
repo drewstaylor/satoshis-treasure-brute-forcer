@@ -57,6 +57,11 @@ bruteForcer = function (encryptedMsg) {
         console.log('*');
         console.log('*');
         console.log("PASSWORD FOUND: " + password);
+        console.log('*');
+        console.log('*');
+        console.log('*');
+        console.log('Process started: ' + started);
+        console.log('Final iteration at: ' + finished)
 
         break;
     }
