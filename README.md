@@ -39,3 +39,18 @@ Example
 ```
 node bruteforce.js
 ```
+
+# Benchmarks
+
+*Tested on Intel i7-7700 CPU @ 3.6 GHz:*
+
+![Extracted encryped html from the encryptedMsg variable](https://raw.githubusercontent.com/drewstaylor/satoshis-treasure-brute-forcer/master/assets/benchmark.png)
+
+*Number of password candidates tested by benchmark:* `1,754,116`
+
+*Last iteration output including start and end timestamps:*
+```
+FINAL ITERATION!
+Process started: Fri Jun 21 2019 10:50:17 GMT-0400 (Eastern Daylight Time)
+Final iteration at: Fri Jun 21 2019 11:13:31 GMT-0400 (Eastern Daylight Time)
+```
