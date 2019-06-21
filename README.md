@@ -39,3 +39,22 @@ Example
 ```
 node bruteforce.js
 ```
+
+# Benchmarks
+
+*Tested on Intel i7-7700 CPU @ 3.6 GHz:*
+
+![Extracted encryped html from the encryptedMsg variable](https://raw.githubusercontent.com/drewstaylor/satoshis-treasure-brute-forcer/master/assets/benchmark.png)
+
+- Number of password candidates tested by benchmark: `1,754,116`
+
+- Length of *all* passwords used in benchmark: `45 chars`
+
+- Last iteration output from script (including start and end timestamps):
+```
+FINAL ITERATION!
+Process started: Fri Jun 21 2019 10:50:17 GMT-0400 (Eastern Daylight Time)
+Final iteration at: Fri Jun 21 2019 11:13:31 GMT-0400 (Eastern Daylight Time)
+```
+
+*E.g. The script yields about 76,265 passwords per minute (of char length 45), or about 1,271 passwords (of char length 45) per second when run from a reasonably powered machine*
