@@ -47,12 +47,17 @@ bruteForcer = function (encryptedMsg) {
 
         let plainHTML = CryptoJS.AES.decrypt(encryptedHTML, password).toString(CryptoJS.enc.Utf8);
 
-        document.write(plainHTML);
-        document.close();
-
+        console.log('*');
+        console.log('*');
+        console.log('*');
         console.log("PASSWORD FOUND: " + password);
-        console.info("PASSWORD FOUND: " + password);
-        alert("PASSWORD FOUND: " + password);
+        console.log('****** BEGIN DECRYPTED PAGE OUTPUT ******');
+        console.log("Decrypted HTML", plainHTML);
+        console.log('****** END DECRYPTED PAGE OUTPUT ******');
+        console.log('*');
+        console.log('*');
+        console.log('*');
+        console.log("PASSWORD FOUND: " + password);
 
         break;
     }
