@@ -41,7 +41,7 @@ bruteForcer = function (encryptedMsg) {
         }
 
         if (decryptedHMAC !== encryptedHMAC) {
-            console.warn("FAILED " + i + " of " + targetLength);
+            console.warn(password + " FAILED " + i + " of " + targetLength);
             continue;
         }
 
