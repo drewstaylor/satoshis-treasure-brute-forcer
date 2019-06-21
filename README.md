@@ -19,9 +19,9 @@ Replace line 11 with the encrypted html string you can get from the bottom of th
 
 Example
 
-[[https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/assets/viewsource_example.png|alt=view page source]]
+[[https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/assets/viewsource_example.png|alt="view page source"]]
 
-[[https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/assets/ecryptedhtml_example.png|alt=encrypted html]]
+[[https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/assets/ecryptedhtml_example.png|alt="find encrypted html"]]
 
 ```
 // Replace the contents of `encryptedClue` with the contents of the Satoshi's Treasure `encryptedMsg` variable
