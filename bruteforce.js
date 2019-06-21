@@ -25,13 +25,12 @@ bruteForcer = function (encryptedMsg) {
     console.log('Process started: ' + started);
 
     let candidates = bruteForceJson.candidates;
+    let targetLength = candidates.length;
 
     // Loop and try to submit
     for (let i = 0; i < candidates.length; i++) {
         let password = candidates[i].replace(/\n|\r/g, "");
-        let decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(password).toString()).toString();
-
-        let targetLength = candidates.length;
+        let decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(password).toString()).toString();        
 
         if (i == (targetLength - 1)) {
             finished = new Date();
