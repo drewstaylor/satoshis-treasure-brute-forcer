@@ -18,6 +18,11 @@ A naively simple, probably time consuming and inefficient, approach to running d
 Replace line 11 with the encrypted html string you can get from the bottom of the html document of the encrypted page hosted at https://satoshistreasure.xyz
 
 Example
+
+[[https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/assets/viewsource_example.png|alt=view page source]]
+
+[[https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/assets/ecryptedhtml_example.png|alt=encrypted html]]
+
 ```
 // Replace the contents of `encryptedClue` with the contents of the Satoshi's Treasure `encryptedMsg` variable
 // This variable can be found in the html code of the clue page at the bottom of the document
