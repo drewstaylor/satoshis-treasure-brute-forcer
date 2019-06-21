@@ -46,11 +46,11 @@ node bruteforce.js
 
 ![Extracted encryped html from the encryptedMsg variable](https://raw.githubusercontent.com/drewstaylor/satoshis-treasure-brute-forcer/master/assets/benchmark.png)
 
-- Number of password candidates tested by benchmark:* `1,754,116`
+- Number of password candidates tested by benchmark: `1,754,116`
 
 - Length of *all* passwords used in benchmark: `45 chars`
 
-_Last iteration output from script (including start and end timestamps):_
+- Last iteration output from script (including start and end timestamps):
 ```
 FINAL ITERATION!
 Process started: Fri Jun 21 2019 10:50:17 GMT-0400 (Eastern Daylight Time)
