@@ -57,4 +57,4 @@ Process started: Fri Jun 21 2019 10:50:17 GMT-0400 (Eastern Daylight Time)
 Final iteration at: Fri Jun 21 2019 11:13:31 GMT-0400 (Eastern Daylight Time)
 ```
 
-*E.g. The script yields about 76,265 45 char length passwords per minute / 1,271 45 char length passwords per second when running from a reasonably powered machine*
+*E.g. The script yields about 76,265 passwords per minute (of char length 45), or about 1,271 passwords (of char length 45) per second when run from a reasonably powered machine*
