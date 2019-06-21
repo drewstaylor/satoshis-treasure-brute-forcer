@@ -2,14 +2,16 @@
 
 A naively simple, probably time consuming and inefficient, approach to running dictionary attacks on client side encrypted pages from https://satoshistreasure.xyz. While it is _festina lente_ level slow, it does have 2 advantages. First, it uses the literal identical code as the Satoshi's Treasure website, so reliability of password checking and decryption technique (e.g. base64 padding technique) is guaranteed. Second, it is easy to use even for a non-technical person (_but I still need to make it easier, so that only the word list file needs to be edited_). 
 
-# Depdencies
+# Depedencies
 - Node.js
 
 # Usage
 
 - *Step 1)* Create a password list and convert it to a json array format
 
-- *Step 2)* Take the json array you made in step 1 and paste it into the candidates array in `./bruteforce.json`. This will become the word list used by the script you will run in the final step
+- *Step 2)* Take the json array you made in step 1 and use it as the value of the `candidates` array in `./bruteforce.json`. This will become the word list used by the script you will run in the final step. See `./bruteforce.example.json` for a very basic formatting example.
+
+*WARNING* The current out of the box `./bruteforce.json` included in this repo is 1.7 million passwords long. Avoid opening in a text editor or do so at your own risk! as the file is huge and may crash your PC lol. Better to open `./bruteforce.example.json`, paste in your words, and save as 
 
 - *Step 3)* Open up `./bruteforce.js`
 
