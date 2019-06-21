@@ -4,7 +4,7 @@
  * @author drew@infiniteinternet.ca
  */
 
-// Replace `encryptedClue` with the contents of the Satoshi's Treasure `encryptedMsg` variable
+// Replace the contents of `encryptedClue` with the contents of the Satoshi's Treasure `encryptedMsg` variable
 // This variable can be found in the html code of the clue page at the bottom of the document
 // Or, simply right click the page from your browser, select "View Source", and perform a text
 // search (Ctrl + F) for "encryptedMsg"
