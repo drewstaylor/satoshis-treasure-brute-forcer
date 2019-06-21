@@ -15,9 +15,14 @@ A naively simple, probably time consuming and inefficient, approach to running d
 
 - *Step 3)* Open up `./bruteforce.js`
 
-Replace line 11 with the encrypted html string you can get from the bottom of the html document of the encrypted page hosted at https://satoshistreasure.xyz/k14
+Replace line 11 with the encrypted html string you can get from the bottom of the html document of the encrypted page hosted at https://satoshistreasure.xyz
 
 Example
+
+![View source code of target clue page](https://raw.githubusercontent.com/drewstaylor/satoshis-treasure-brute-forcer/master/assets/viewsource_example.png)
+
+![Extracted encryped html from the encryptedMsg variable](https://raw.githubusercontent.com/drewstaylor/satoshis-treasure-brute-forcer/master/assets/ecryptedhtml_example.png)
+
 ```
 // Replace the contents of `encryptedClue` with the contents of the Satoshi's Treasure `encryptedMsg` variable
 // This variable can be found in the html code of the clue page at the bottom of the document
