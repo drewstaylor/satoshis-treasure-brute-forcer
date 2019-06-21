@@ -11,7 +11,7 @@ A naively simple, probably time consuming and inefficient, approach to running d
 
 - *Step 2)* Take the json array you made in step 1 and use it as the value of the `candidates` array in `./bruteforce.json`. This will become the word list used by the script you will run in the final step. See `./bruteforce.example.json` for a very basic formatting example.
 
-*WARNING* The current out of the box `./bruteforce.json` included in this repo is 1.7 million passwords long. Avoid opening in a text editor or do so at your own risk! as the file is huge and may crash your PC lol. Better to open `./bruteforce.example.json`, paste in your words, and save as 
+*WARNING* The current out of the box `./bruteforce.json` included in this repo is 1.7 million passwords long. Avoid opening it in a text editor or do so at your own risk! (because the editor or your PC could crash). Better to open `./bruteforce.example.json`, paste in your words, and save the edited example file as `./bruteforce.json` :)
 
 - *Step 3)* Open up `./bruteforce.js`
 
