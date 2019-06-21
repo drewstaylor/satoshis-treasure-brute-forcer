@@ -7,11 +7,11 @@ A naively simple, probably time consuming and inefficient, approach to running d
 
 # Usage
 
--*Step 1)* Create a password list and convert it to a json array format
+- *Step 1)* Create a password list and convert it to a json array format
 
--*Step 2)* Take the json array you made in step 1 and paste it into the candidates array in `./bruteforce.json`. This will become the word list used by the script you will run in the final step
+- *Step 2)* Take the json array you made in step 1 and paste it into the candidates array in `./bruteforce.json`. This will become the word list used by the script you will run in the final step
 
--*Step 3)* Open up `./bruteforce.js`
+- *Step 3)* Open up `./bruteforce.js`
 
 Replace line 11 with the encrypted html string you can get from the bottom of the html document of the encrypted page hosted at https://satoshistreasure.xyz/k14
 
@@ -25,7 +25,7 @@ let encryptedClue = 'ef186f14b0acc6a57e7b522909402637fd8e812d2eb63c759ee345df143
 
 ```
 
--*Step 4)* Run the brute forcer script from your terminal, bash or CMD:
+- *Step 4)* Run the brute forcer script from your terminal, bash or CMD:
 
 
 Example
