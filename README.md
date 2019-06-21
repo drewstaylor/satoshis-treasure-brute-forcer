@@ -3,7 +3,7 @@
 A naively simple, probably time consuming and inefficient, approach to running dictionary attacks on client side encrypted pages from https://satoshistreasure.xyz. While it is _festina lente_ level slow, it does have 2 advantages. First, it uses the literal identical code as the Satoshi's Treasure website, so reliability of password checking and decryption technique (e.g. base64 padding technique) is guaranteed. Second, it is easy to use even for a non-technical person (_but I still need to make it easier, so that only the word list file needs to be edited_). 
 
 # Depedencies
-- Node.js
+- Node.js (https://nodejs.org)
 
 # Usage
 
