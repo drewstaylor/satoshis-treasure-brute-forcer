@@ -15,7 +15,7 @@ A naively simple, probably time consuming and inefficient, approach to running d
 
 - *Step 3)* Open up `./bruteforce.js`
 
-Replace line 11 with the encrypted html string you can get from the bottom of the html document of the encrypted page hosted at https://satoshistreasure.xyz/k14
+Replace line 11 with the encrypted html string you can get from the bottom of the html document of the encrypted page hosted at https://satoshistreasure.xyz
 
 Example
 ```
