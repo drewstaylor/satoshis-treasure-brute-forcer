@@ -2,12 +2,12 @@ import json
 
 # Wordlist to be converted (TXT file in)
 textFilename = "wordlist.txt"
+
 # JSON output (JSON file out)
 jsonFilename = "bruteforce.json"
 
+# File reader output
 passwordCandidates = []
-
-n = 0
 
 # Terminal log
 print("Working on ", textFilename)
@@ -16,7 +16,6 @@ with open(textFilename) as file:
     for line in file:
         # Append to JSON convertible
         passwordCandidates.append(line)
-        n += 1
 
 # Terminal log
 print("Converting to ", jsonFilename)
