@@ -4,16 +4,45 @@ A naively simple, probably time consuming and inefficient, approach to running d
 
 # Depedencies
 - Node.js (https://nodejs.org)
+- Python (https://www.python.org/downloads/)
 
 # Usage
 
-- *Step 1)* Create a password list and convert it to a json array format
+- *Step 1)* Create a password list and convert it to a json format
 
-- *Step 2)* Take the json array you made in step 1 and use it as the value of the `candidates` array in `./bruteforce.json`. This will become the word list used by the script you will run in the final step. See `./bruteforce.example.json` for a very basic formatting example.
+  #### Creating a password:
+  
+  There are many free tools available for creating txt wordlists that can easily be converted to json format using one of the 2 options below.
+  
+  _Recommended word list generators:_
+  - Crunch (http://manpages.ubuntu.com/manpages/bionic/man1/crunch.1.html)
+  - Mentalist (https://github.com/sc0tfree/mentalist)
+  - Paw (https://github.com/tehw0lf/paw)
 
-*WARNING* The current out of the box `./bruteforce.json` included in this repo is 1.7 million passwords long. Avoid opening it in a text editor or do so at your own risk! (because the editor or your PC could crash). Better to open `./bruteforce.example.json`, paste in your words, and save the edited example file as `./bruteforce.json` :)
+  #### Converting it to json format:
 
-- *Step 3)* Open up `./bruteforce.js`
+  - ##### Option 1: Using python
+    - If python is in your path you can use the python script included in the repo: [a link](https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/tools/wordlist_to_json.py)
+    
+    Example
+    ```
+    $ cd tools
+    $ python3 wordlist_to_json.py
+    > Working on wordlist.txt
+    > Converting to bruteforce.json
+    > Output written to file(s)
+    $ mv bruteforce.json ../bruteforce.json # moves the file back into the root folder
+    ```
+    
+    The above example is run directly from the `/tools` folder, and creates a ready to use `brutefroce.json` from any any file called `wordlist.txt` that is placed in the tools folder
+
+  - ##### Option 2: Raw and dirty cut and paste
+
+    - Take the json array you made in step 1 and use it as the value of the `candidates` array in `./bruteforce.json`. This will become the word list used by the script you will run in the final step. See `./bruteforce.example.json` for a very basic formatting example.
+
+    - *WARNING* The current out of the box `./bruteforce.json` included in this repo is 1.7 million passwords long. Avoid opening it in a text editor or do so at your own risk! (because the editor or your PC could crash). Better to open `./bruteforce.example.json`, paste in your words, and save the edited example file as `./bruteforce.json` :)
+
+- *Step 2)* Open up `./bruteforce.js`
 
 Replace line 11 with the encrypted html string you can get from the bottom of the html document of the encrypted page hosted at https://satoshistreasure.xyz
 
@@ -32,7 +61,7 @@ let encryptedClue = 'ef186f14b0acc6a57e7b522909402637fd8e812d2eb63c759ee345df143
 
 ```
 
-- *Step 4)* Run the brute forcer script from your terminal, bash or CMD:
+- *Step 3)* Run the brute forcer script from your terminal, bash or CMD:
 
 
 Example
