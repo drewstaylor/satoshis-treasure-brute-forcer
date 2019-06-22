@@ -6,7 +6,7 @@ $ cat wordlist.txt
 > password3
 $ python3 wordlist_to_json.py
 ```
-Returns:
+##### Returns:
 ```
 > Working on wordlist.txt
 > Converting to bruteforce.json
