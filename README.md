@@ -19,10 +19,10 @@ A naively simple, probably time consuming and inefficient, approach to running d
   - Mentalist (https://github.com/sc0tfree/mentalist)
   - Paw (https://github.com/tehw0lf/paw)
 
-  #### Converting it to json format:
+  #### Converting your to json format:
 
   - ##### Option 1: Using python
-    - If python is in your path you can use the python script included in the repo: [a link](https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/tools/wordlist_to_json.py)
+    - If python is in your path you can use the python script included in the repo: [a link](https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/tools/wordlist_to_json.py) just rename your file to `wordslist.txt`, place it in the `tools` folder and run the json conversion script.
     
     Example
     ```
