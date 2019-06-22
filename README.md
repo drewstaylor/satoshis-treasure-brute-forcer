@@ -22,7 +22,7 @@ A naively simple, probably time consuming and inefficient, approach to running d
   #### Converting your to json format:
 
   - ##### Option 1: Using python
-    - If python is in your path you can use the python script included in the repo: [a link](https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/tools/wordlist_to_json.py) just rename your file to `wordslist.txt`, place it in the `tools` folder and run the json conversion script.
+    - If python is in your path you can use the python script included in the repo [(link)](https://github.com/drewstaylor/satoshis-treasure-brute-forcer/blob/master/tools/wordlist_to_json.py). Simply rename your file to `wordslist.txt`, place it in the `tools` folder and run the json conversion script.
     
     Example
     ```
