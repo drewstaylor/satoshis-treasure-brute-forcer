@@ -12,8 +12,12 @@ let encryptedClue = 'ef186f14b0acc6a57e7b522909402637fd8e812d2eb63c759ee345df143
 
 const CryptoJS = require('./satoshistreasure.crypto');
 const json = require('./bruteforce.json');
+const { GPU } = require('gpu.js');
+const gpu = new GPU();
 
 let bruteForceJson = json;
+
+
 
 // Worker function
 bruteForcer = function (encryptedMsg) {
@@ -27,24 +31,22 @@ bruteForcer = function (encryptedMsg) {
     let candidates = bruteForceJson.candidates;
     let targetLength = candidates.length;
     let maxCycles = 1000000;
-    let pieces;
     let piece = 0;
-
-    if (targetLength > maxCycles) {
-        pieces = Math.ceil(targetLength);
-    }
+    let cycle;
 
     // Loop and try to submit
     for (let i = 0; i < targetLength; i++) {
         // Memory management
-        if (i > maxCycles) {
+        if (i === maxCycles) {
             ++piece;
-            delete candidates;
-            var candidates = bruteForceJson.candidates;
+            cycle = bruteForceJson.candidates;
             i = piece * maxCycles;
+        } else if (i === 0) {
+            cycle = candidates;
         }
 
-        let password = candidates[i].replace(/\n|\r/g, "");
+
+        let password = cycle[i].replace(/\n|\r/g, "");
         let decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(password).toString()).toString();        
 
         if (i == (targetLength - 1)) {
