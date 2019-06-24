@@ -53,7 +53,7 @@ bruteForcer = function (encryptedMsg) {
             finished = new Date();
             console.log('FINAL ITERATION!');
             console.log('Process started: ' + started);
-            console.log('Final iteration at: ' + finished)
+            console.log('Final iteration at: ' + finished);
         }
 
         if (decryptedHMAC !== encryptedHMAC) {
