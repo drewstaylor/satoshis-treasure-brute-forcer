@@ -58,7 +58,9 @@ bruteForcer = function (encryptedMsg) {
         }
 
         let plainHTML = CryptoJS.AES.decrypt(encryptedHTML, password).toString(CryptoJS.enc.Utf8);
-
+        
+        finished = new Date();
+        
         console.log('*');
         console.log('*');
         console.log('*');
