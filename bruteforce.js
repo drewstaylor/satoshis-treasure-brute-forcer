@@ -26,9 +26,24 @@ bruteForcer = function (encryptedMsg) {
 
     let candidates = bruteForceJson.candidates;
     let targetLength = candidates.length;
+    let maxCycles = 1000000;
+    let pieces;
+    let piece = 0;
+
+    if (targetLength > maxCycles) {
+        pieces = Math.ceil(targetLength);
+    }
 
     // Loop and try to submit
-    for (let i = 0; i < candidates.length; i++) {
+    for (let i = 0; i < targetLength; i++) {
+        // Memory management
+        if (i > maxCycles) {
+            ++piece;
+            delete candidates;
+            var candidates = bruteForceJson.candidates;
+            i = piece * maxCycles;
+        }
+
         let password = candidates[i].replace(/\n|\r/g, "");
         let decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(password).toString()).toString();        
 
