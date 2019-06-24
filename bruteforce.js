@@ -12,12 +12,8 @@ let encryptedClue = 'ef186f14b0acc6a57e7b522909402637fd8e812d2eb63c759ee345df143
 
 const CryptoJS = require('./satoshistreasure.crypto');
 const json = require('./bruteforce.json');
-const { GPU } = require('gpu.js');
-const gpu = new GPU();
 
 let bruteForceJson = json;
-
-
 
 // Worker function
 bruteForcer = function (encryptedMsg) {
